@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>МІЯ — Дрони Перемоги</title>
 
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS для стилів -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  <!-- Font Awesome -->
+  <!-- Іконки Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- SwiperJS CSS -->
+  <!-- SwiperJS для слайдера -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
   <style>
+    /* Стилі для слайдера */
     .swiper-slide img, .swiper-slide video {
       width: 100%;
       border-radius: 12px;
       object-fit: cover;
     }
+
+    /* Адаптивність для заголовків та таблиці */
     @media (max-width: 640px) {
       h1 { font-size: 2.5rem; }
       h2 { font-size: 1.75rem; }
@@ -29,14 +32,14 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
 
-  <!-- Hero -->
+  <!-- Головна секція -->
   <section class="bg-blue-900 text-white py-16 sm:py-20 text-center px-4">
     <h1 class="text-4xl sm:text-5xl font-bold mb-4">МІЯ</h1>
     <p class="text-lg sm:text-xl mb-6">Дрони Перемоги — захист твого майбутнього</p>
     <a href="#donate" class="bg-yellow-400 text-black px-6 py-3 font-semibold rounded hover:bg-yellow-300 transition">Підтримати</a>
   </section>
 
-  <!-- Патріотичний блок -->
+  <!-- Патріотичний заклик -->
   <section class="bg-yellow-300 py-12 px-4 sm:px-6 text-center">
     <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4">Не хочеш сидіти в окопі?</h2>
     <p class="text-lg sm:text-xl max-w-3xl mx-auto text-gray-800">
@@ -45,11 +48,20 @@
     <a href="#donate" class="mt-6 inline-block bg-blue-800 text-white px-6 py-3 font-semibold rounded hover:bg-blue-700 transition">Зробити внесок</a>
   </section>
 
-  <!-- Про проект -->
-  <section class="py-12 sm:py-16 px-4 sm:px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Про проєкт</h2>
-    <p class="text-lg mb-6">МІЯ — це ініціатива створення розвідувальних, ударних і FPV-дронів для ЗСУ. Ми розробляємо, тестуємо й передаємо дрони безпосередньо на фронт.</p>
-  </section>
+ <!-- Про проект -->
+<section class="py-12 sm:py-16 px-4 sm:px-6 max-w-4xl mx-auto text-center">
+  <h2 class="text-2xl sm:text-3xl font-bold mb-4">Про проєкт</h2>
+  <p class="text-lg mb-6">
+    МІЯ — це ініціатива створення розвідувальних, ударних і FPV-дронів для ЗСУ. Ми розробляємо, тестуємо й передаємо дрони безпосередньо на фронт, щоб підвищити ефективність та безпеку наших воїнів.
+  </p>
+  <p class="text-lg mb-6">
+    Наразі проєкт перебуває на етапі формування: створюється команда, відпрацьовується технологія, готуються перші прототипи. Саме зараз — вирішальний момент, коли навіть невелика підтримка здатна пришвидшити запуск виробництва й масштабування ініціативи.
+  </p>
+  <p class="text-lg">
+    Ваш донат допоможе нам закупити необхідні комплектуючі, провести випробування та забезпечити перші постачання на передову. Кожна гривня — це інвестиція в майбутню перевагу української армії.
+  </p>
+</section>
+
 
   <!-- Чому саме дрони -->
   <section class="bg-white py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
@@ -73,11 +85,12 @@
     </div>
   </section>
 
-  <!-- Слайдер -->
+  <!-- Слайдер з фото/відео -->
   <section class="py-12 sm:py-16 px-4 sm:px-6">
     <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Дрони в дії</h2>
     <div class="swiper mySwiper max-w-5xl mx-auto">
       <div class="swiper-wrapper">
+        <!-- Замінити src на реальні фото/відео -->
         <div class="swiper-slide"><img src="https://example.com/fpv.jpg" alt="FPV дрон"/></div>
         <div class="swiper-slide"><img src="https://example.com/recon.jpg" alt="Розвідувальний дрон"/></div>
         <div class="swiper-slide"><img src="https://example.com/strike.jpg" alt="Ударний дрон"/></div>
@@ -92,7 +105,7 @@
     </div>
   </section>
 
-  <!-- Порівняння -->
+  <!-- Порівняння з артилерією -->
   <section class="bg-blue-50 py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
     <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Переваги над артилерією</h2>
     <div class="grid md:grid-cols-2 gap-6 text-base sm:text-lg">
@@ -113,7 +126,7 @@
     </div>
   </section>
 
-  <!-- Характеристики -->
+  <!-- Таблиця характеристик -->
   <section class="py-12 sm:py-16 px-4 sm:px-6 max-w-4xl mx-auto text-center">
     <h2 class="text-2xl sm:text-3xl font-bold mb-6">Технічні характеристики</h2>
     <div class="table-container overflow-x-auto">
@@ -150,33 +163,33 @@
     </div>
   </section>
 
-  <!-- Донати -->
+  <!-- Донати через Monobank -->
   <section id="donate" class="bg-blue-100 py-12 sm:py-16 px-4 sm:px-6 text-center">
     <h2 class="text-2xl sm:text-3xl font-bold mb-4">Підтримати проєкт</h2>
-    <p class="text-lg mb-6">Обери зручну валюту</p>
+    <p class="text-lg mb-6">Обери зручну валюту через Monobank</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-      <a href="https://your-link.com/usd" target="_blank" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-500 transition font-semibold">Донат в $ USD</a>
-      <a href="https://your-link.com/eur" target="_blank" class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-600 transition font-semibold">Донат в € EUR</a>
-      <a href="https://send.monobank.ua/" target="_blank" class="bg-yellow-500 text-black px-6 py-3 rounded hover:bg-yellow-400 transition font-semibold">Донат в ₴ UAH</a>
+      <!-- Заміни посилання на своє Monobank -->
+      <a href="https://send.monobank.ua/jar/3K98jYi5Cn" target="_blank" class="bg-yellow-500 text-black px-6 py-3 rounded hover:bg-yellow-400 transition font-semibold">Донат в ₴ UAH</a>
     </div>
   </section>
 
   <!-- Контакти -->
-  <section class="py-12 sm:py-16 px-4 sm:px-6 text-center">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Контакти</h2>
-    <div class="flex justify-center gap-6 text-2xl mt-6">
-      <a href="https://t.me/drony_ua" class="text-blue-500 hover:text-blue-700"><i class="fab fa-telegram-plane"></i></a>
-      <a href="https://facebook.com/drony.ua" class="text-blue-700 hover:text-blue-900"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com/drony_ua" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/drony_ua" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
-    </div>
-  </section>
+<section class="py-12 sm:py-16 px-4 sm:px-6 text-center">
+  <h2 class="text-2xl sm:text-3xl font-bold mb-4">Контакти</h2>
+  <div class="flex justify-center gap-6 text-2xl mt-6">
+    <a href="https://t.me/drony_ua" class="text-blue-500 hover:text-blue-700" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://facebook.com/drony.ua" class="text-blue-700 hover:text-blue-900" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/drony_ua" class="text-pink-500 hover:text-pink-700" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/drony_ua" class="text-blue-400 hover:text-blue-600" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+</section>
 
+  <!-- Футер -->
   <footer class="bg-gray-800 text-white text-center py-6">
     <p>&copy; 2025 МІЯ. Всі права захищено.</p>
   </footer>
 
-  <!-- SwiperJS -->
+  <!-- Підключення SwiperJS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.mySwiper', {
